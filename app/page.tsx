@@ -1,7 +1,10 @@
 'use client'
 
 import { useEffect, useState } from 'react'
+import Image from 'next/image'
 import { ArrowRight, ArrowUpRight, Menu, X } from 'lucide-react'
+
+import logo from '@/public/swim-safe-logo.png'
 
 const nav = [
   { label: 'The problem', href: '#problem' },
@@ -68,7 +71,7 @@ const EMAIL = 'swimsafeuganda@gmail.com'
 function Wordmark() {
   return (
     <>
-      <span className="flag" aria-hidden="true" />
+      <Image className="brand-mark" src={logo} alt="" priority />
       <span>
         Swim Safe <em>Uganda</em>
       </span>
