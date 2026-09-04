@@ -68,7 +68,7 @@ const EMAIL = 'swimsafeuganda@gmail.com'
 function Wordmark() {
   return (
     <>
-      <span className="flag" aria-hidden="true" />
+      <img className="brand-mark" src="/images/swim-safe-logo.svg" alt="" aria-hidden="true" />
       <span>
         Swim Safe <em>Uganda</em>
       </span>

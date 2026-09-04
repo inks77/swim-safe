@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512" role="img" aria-label="Swim Safe Uganda">
+  <title>Swim Safe Uganda</title>
+  <defs>
+    <clipPath id="ssu-disc"><circle cx="256.0" cy="256.0" r="179"/></clipPath>
+    <clipPath id="ssu-face" clip-rule="evenodd"><path d="M 142.0 346.0 a 114.0 71.0 0 1 0 228.0 0 a 114.0 71.0 0 1 0 -228.0 0 Z M 203.0 346.0 a 53.0 36.0 0 1 0 106.0 0 a 53.0 36.0 0 1 0 -106.0 0 Z"/></clipPath>
+    <clipPath id="ssu-deep" clip-rule="evenodd"><path d="M 142.0 360.0 a 114.0 71.0 0 1 0 228.0 0 a 114.0 71.0 0 1 0 -228.0 0 Z M 203.0 360.0 a 53.0 36.0 0 1 0 106.0 0 a 53.0 36.0 0 1 0 -106.0 0 Z"/></clipPath>
+    <path id="ssu-arc-top" d="M 59.0 256.0 A 197 197 0 0 1 453.0 256.0"/>
+    <path id="ssu-arc-bottom" d="M 16.0 256.0 A 240 240 0 0 0 496.0 256.0"/>
+  </defs>
+
+  <!-- Yellow ring carrying the wordmark, over a white field -->
+  <circle cx="256.0" cy="256.0" r="250" fill="#FFD400"/>
+  <circle cx="256.0" cy="256.0" r="179" fill="#FFFFFF"/>
+
+  <!-- Water -->
+  <g clip-path="url(#ssu-disc)"><path fill="#1668C9" d="M 60 246 C 98 228 140 226 180 238 C 220 250 258 254 296 245 C 336 235 404 231 454 249 L 454 456 L 60 456 Z"/></g>
+
+  <!-- Lifebuoy: thickness underneath, then the face, then the hub -->
+  <g clip-path="url(#ssu-deep)">
+    <rect x="130" y="250" width="252" height="200" fill="#C6CACC"/>
+    <path fill="#A8161D" d="M 256.0 346.0 L 303.08 418.88 A 122.0 79.0 0 0 1 222.37 421.94 Z" transform="translate(0 14.0)"/><path fill="#A8161D" d="M 256.0 346.0 L 156.31 391.54 A 122.0 79.0 0 0 1 138.73 324.22 Z" transform="translate(0 14.0)"/><path fill="#A8161D" d="M 256.0 346.0 L 208.92 273.12 A 122.0 79.0 0 0 1 289.63 270.06 Z" transform="translate(0 14.0)"/><path fill="#A8161D" d="M 256.0 346.0 L 355.69 300.46 A 122.0 79.0 0 0 1 373.27 367.78 Z" transform="translate(0 14.0)"/>
+  </g>
+  <g clip-path="url(#ssu-face)">
+    <rect x="130" y="250" width="252" height="200" fill="#FFFFFF"/>
+    <path fill="#D9232B" d="M 256.0 346.0 L 303.08 418.88 A 122.0 79.0 0 0 1 222.37 421.94 Z"/><path fill="#D9232B" d="M 256.0 346.0 L 156.31 391.54 A 122.0 79.0 0 0 1 138.73 324.22 Z"/><path fill="#D9232B" d="M 256.0 346.0 L 208.92 273.12 A 122.0 79.0 0 0 1 289.63 270.06 Z"/><path fill="#D9232B" d="M 256.0 346.0 L 355.69 300.46 A 122.0 79.0 0 0 1 373.27 367.78 Z"/>
+  </g>
+  <ellipse cx="256.0" cy="360.0" rx="53.0" ry="36.0" fill="#A8161D"/>
+  <ellipse cx="256.0" cy="346.0" rx="53.0" ry="36.0" fill="#D9232B"/>
+  <path fill="#FFFFFF" d="M 247.0 321.0 h 18 v 16 h 16 v 18 h -16 v 16 h -18 v -16 h -16 v -18 h 16 Z"/>
+
+  <!-- Wordmark set on the ring -->
+  <g fill="#101010" font-family="Archivo, 'Arial Black', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-weight="900" font-size="60">
+    <text text-anchor="middle"><textPath href="#ssu-arc-top" startOffset="50%" textLength="448" lengthAdjust="spacingAndGlyphs">SWIM SAFE</textPath></text>
+    <text text-anchor="middle"><textPath href="#ssu-arc-bottom" startOffset="50%" textLength="300" lengthAdjust="spacingAndGlyphs">UGANDA</textPath></text>
+  </g>
+</svg>

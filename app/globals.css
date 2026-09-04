@@ -240,6 +240,15 @@ h1, h2, h3, p, figure, blockquote { margin: 0; }
   box-shadow: inset 0 0 0 1px rgb(0 0 0 / 0.08);
 }
 
+/* The organisation's mark. The logo carries its own ring lettering, which is
+   unreadable at brand size, so the wordmark stays set beside it. */
+.brand-mark {
+  flex: none;
+  display: block;
+  width: 44px;
+  height: 44px;
+}
+
 .brand {
   display: inline-flex;
   align-items: center;
@@ -760,6 +769,7 @@ h1, h2, h3, p, figure, blockquote { margin: 0; }
 }
 
 .footer .brand { color: var(--on-deep); }
+.footer .brand-mark { width: 68px; height: 68px; }
 .footer .brand em { color: var(--on-deep-2); }
 
 .footer-blurb {

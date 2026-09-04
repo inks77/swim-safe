@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512" role="img" aria-label="Swim Safe Uganda">
+  <title>Swim Safe Uganda</title>
+  <defs>
+    <clipPath id="i-disc"><circle cx="256.0" cy="256.0" r="222"/></clipPath>
+    <clipPath id="i-face" clip-rule="evenodd"><path d="M 106.0 300.0 a 150.0 93.0 0 1 0 300.0 0 a 150.0 93.0 0 1 0 -300.0 0 Z M 186.0 300.0 a 70.0 47.0 0 1 0 140.0 0 a 70.0 47.0 0 1 0 -140.0 0 Z"/></clipPath>
+    <clipPath id="i-deep" clip-rule="evenodd"><path d="M 106.0 318.0 a 150.0 93.0 0 1 0 300.0 0 a 150.0 93.0 0 1 0 -300.0 0 Z M 186.0 318.0 a 70.0 47.0 0 1 0 140.0 0 a 70.0 47.0 0 1 0 -140.0 0 Z"/></clipPath>
+  </defs>
+  <circle cx="256.0" cy="256.0" r="252" fill="#FFD400"/>
+  <circle cx="256.0" cy="256.0" r="222" fill="#FFFFFF"/>
+  <g clip-path="url(#i-disc)">
+    <path fill="#1668C9" d="M 20 208 C 68 184 122 182 172 198 C 222 214 268 218 314 206 C 362 194 440 190 500 212 L 500 500 L 20 500 Z"/>
+  </g>
+  <g clip-path="url(#i-deep)">
+    <rect x="96" y="190" width="320" height="240" fill="#C6CACC"/>
+    <path fill="#A8161D" d="M 256.0 300.0 L 317.49 395.09 A 160.0 103.0 0 0 1 211.63 398.96 Z" transform="translate(0 18.0)"/><path fill="#A8161D" d="M 256.0 300.0 L 125.42 359.52 A 160.0 103.0 0 0 1 102.28 271.44 Z" transform="translate(0 18.0)"/><path fill="#A8161D" d="M 256.0 300.0 L 194.51 204.91 A 160.0 103.0 0 0 1 300.37 201.04 Z" transform="translate(0 18.0)"/><path fill="#A8161D" d="M 256.0 300.0 L 386.58 240.48 A 160.0 103.0 0 0 1 409.80 328.39 Z" transform="translate(0 18.0)"/>
+  </g>
+  <g clip-path="url(#i-face)">
+    <rect x="96" y="190" width="320" height="240" fill="#FFFFFF"/>
+    <path fill="#D9232B" d="M 256.0 300.0 L 317.49 395.09 A 160.0 103.0 0 0 1 211.63 398.96 Z"/><path fill="#D9232B" d="M 256.0 300.0 L 125.42 359.52 A 160.0 103.0 0 0 1 102.28 271.44 Z"/><path fill="#D9232B" d="M 256.0 300.0 L 194.51 204.91 A 160.0 103.0 0 0 1 300.37 201.04 Z"/><path fill="#D9232B" d="M 256.0 300.0 L 386.58 240.48 A 160.0 103.0 0 0 1 409.80 328.39 Z"/>
+  </g>
+  <ellipse cx="256.0" cy="318.0" rx="70.0" ry="47.0" fill="#A8161D"/>
+  <ellipse cx="256.0" cy="300.0" rx="70.0" ry="47.0" fill="#D9232B"/>
+  <path fill="#FFFFFF" d="M 244.0 267.0 h 24 v 21 h 21 v 24 h -21 v 21 h -24 v -21 h -21 v -24 h 21 Z"/>
+</svg>
