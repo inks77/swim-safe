@@ -252,6 +252,16 @@ h1, h2, h3, p, figure, blockquote { margin: 0; }
   color: var(--ink);
 }
 
+/* The badge, alongside the wordmark. The flag bar stays for the footnote that explains it. */
+.brand-mark {
+  flex: none;
+  width: 36px;
+  height: 36px;
+  object-fit: contain;
+}
+
+.footer .brand-mark { width: 44px; height: 44px; }
+
 .brand em {
   font-style: normal;
   font-weight: 400;

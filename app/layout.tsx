@@ -23,10 +23,31 @@ const plexMono = IBM_Plex_Mono({
   display: 'swap',
 })
 
+const DESCRIPTION =
+  'Swim Safe Uganda works to prevent drowning through community education, rescue training, lifeguard services and aquatic risk management.'
+
+const SITE_URL =
+  process.env.NEXT_PUBLIC_SITE_URL ??
+  (process.env.VERCEL_PROJECT_PRODUCTION_URL
+    ? `https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}`
+    : 'https://swimsafeug.org')
+
 export const metadata: Metadata = {
+  metadataBase: new URL(SITE_URL),
   title: 'Swim Safe Uganda | Water Safety, Training & Rescue',
-  description:
-    'Swim Safe Uganda works to prevent drowning through community education, rescue training, lifeguard services and aquatic risk management.',
+  description: DESCRIPTION,
+  openGraph: {
+    type: 'website',
+    siteName: 'Swim Safe Uganda',
+    title: 'Swim Safe Uganda | Water Safety, Training & Rescue',
+    description: DESCRIPTION,
+    locale: 'en_UG',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Swim Safe Uganda | Water Safety, Training & Rescue',
+    description: DESCRIPTION,
+  },
 }
 
 export const viewport: Viewport = {
