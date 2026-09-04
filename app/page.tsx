@@ -27,7 +27,7 @@ export default function Page() {
     <main>
       <header className="site-header">
         <a href="#top" className="brand" onClick={closeMenu} aria-label="Swim Safe Uganda home">
-          <span className="brand-mark" aria-hidden="true"><span /><span /><span /></span>
+          <img className="brand-logo" src="/images/swim-safe-uganda-logo.png" alt="Swim Safe Uganda logo" />
           <span>Swim Safe <b>Uganda</b></span>
         </a>
         <button className="mobile-menu-button" onClick={() => setMenuOpen(!menuOpen)} aria-label={menuOpen ? 'Close navigation' : 'Open navigation'} aria-expanded={menuOpen}>
@@ -68,7 +68,7 @@ export default function Page() {
 
       <section className="get-involved page-width" id="get-involved"><div><span className="section-kicker">Get involved</span><h2>Put safety in the hands of the people who need it most.</h2></div><div className="involve-grid"><a href="mailto:swimsafeuganda@gmail.com"><span>Give</span><p>Your support pays for training and equipment in the communities that carry the most risk.</p><ArrowRight size={18} /></a><a href="mailto:swimsafeuganda@gmail.com"><span>Partner as a company</span><p>Fund a community programme, equip a landing site, or train your own staff.</p><ArrowRight size={18} /></a><a href="mailto:swimsafeuganda@gmail.com"><span>Bring us to your community</span><p>Schools, churches, landing sites and groups can request a water safety programme.</p><ArrowRight size={18} /></a></div></section>
 
-      <footer id="contact"><div className="page-width footer-grid"><div><a href="#top" className="brand footer-brand"><span className="brand-mark" aria-hidden="true"><span /><span /><span /></span><span>Swim Safe <b>Uganda</b></span></a><p>Enhancing safety in, on and around water through education, prevention and rescue.</p></div><div><span className="footer-label">Start a conversation</span><a href="mailto:swimsafeuganda@gmail.com">swimsafeuganda@gmail.com</a><a href="tel:+256784580537">+256 784 580 537</a><a href="tel:+256752209938">+256 752 209 938</a></div><div><span className="footer-label">Find us</span><p>Kampala, Uganda</p><a href="#top">swimsafeug.org</a></div></div><div className="page-width footer-bottom"><span>© {new Date().getFullYear()} Swim Safe Uganda</span><span>Water safety is a right, not a privilege.</span></div></footer>
+      <footer id="contact"><div className="page-width footer-grid"><div><a href="#top" className="brand footer-brand"><img className="brand-logo" src="/images/swim-safe-uganda-logo.png" alt="Swim Safe Uganda logo" /><span>Swim Safe <b>Uganda</b></span></a><p>Enhancing safety in, on and around water through education, prevention and rescue.</p></div><div><span className="footer-label">Start a conversation</span><a href="mailto:swimsafeuganda@gmail.com">swimsafeuganda@gmail.com</a><a href="tel:+256784580537">+256 784 580 537</a><a href="tel:+256752209938">+256 752 209 938</a></div><div><span className="footer-label">Find us</span><p>Kampala, Uganda</p><a href="#top">swimsafeug.org</a></div></div><div className="page-width footer-bottom"><span>© {new Date().getFullYear()} Swim Safe Uganda</span><span>Water safety is a right, not a privilege.</span></div></footer>
     </main>
   )
 }
