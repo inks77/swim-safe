@@ -259,6 +259,7 @@ h1, h2, h3, p, figure, blockquote { margin: 0; }
   height: 80px;
   object-fit: contain;
   display: block;
+  border-radius: 50%;
 }
 
 .brand-pdf-link {
