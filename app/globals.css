@@ -285,8 +285,9 @@ h1, h2, h3, p, figure, blockquote { margin: 0; }
   position: sticky;
   top: 0;
   z-index: 40;
+  background: #ffffff;
   transition: background-color 0.35s var(--ease), border-color 0.35s var(--ease);
-  border-bottom: 1px solid transparent;
+  border-bottom: 1px solid var(--rule);
 }
 
 .header-inner {
@@ -297,15 +298,15 @@ h1, h2, h3, p, figure, blockquote { margin: 0; }
   height: 72px;
 }
 
-/* Over the hero the header is glass on deep water; once past it, paper. */
-.header .brand { color: var(--on-deep); }
-.header .brand em { color: var(--on-deep-2); }
-.header .nav a { color: var(--on-deep-2); }
-.header .menu-toggle { color: var(--on-deep); }
+/* Keep navigation readable against the white header in every scroll state. */
+.header .brand { color: var(--ink); }
+.header .brand em { color: var(--muted); }
+.header .nav a { color: var(--ink-2); }
+.header .menu-toggle { color: var(--ink); }
 
 .header[data-scrolled='true'] {
-  background: color-mix(in srgb, var(--paper) 88%, transparent);
-  backdrop-filter: saturate(1.4) blur(14px);
+  background: #ffffff;
+  backdrop-filter: none;
   border-bottom-color: var(--rule);
 }
 
