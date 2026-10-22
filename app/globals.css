@@ -367,10 +367,12 @@ h1, h2, h3, p, figure, blockquote { margin: 0; }
 .sheet {
   position: fixed;
   inset: 0;
-  z-index: 50;
+  z-index: 100;
   display: none;
   flex-direction: column;
-  background: var(--paper);
+  background: #ffffff;
+  isolation: isolate;
+  color: var(--ink);
   padding: 0 var(--gutter) 40px;
   opacity: 0;
   transform: translateY(-8px);
@@ -388,7 +390,12 @@ h1, h2, h3, p, figure, blockquote { margin: 0; }
   justify-content: space-between;
   height: 72px;
   margin-bottom: 12px;
+  color: var(--ink);
 }
+
+.sheet-head .brand { color: #102b2d; }
+.sheet-head .brand em { color: #607477; }
+.sheet-head .menu-toggle { color: #102b2d; }
 
 .sheet-links { display: flex; flex-direction: column; }
 
@@ -400,7 +407,7 @@ h1, h2, h3, p, figure, blockquote { margin: 0; }
   letter-spacing: -0.01em;
   padding-block: 15px;
   border-bottom: 1px solid var(--rule);
-  color: var(--ink);
+  color: #102b2d;
 }
 
 .sheet-foot {
@@ -411,7 +418,7 @@ h1, h2, h3, p, figure, blockquote { margin: 0; }
   gap: 6px;
 }
 
-.sheet-foot a { font-family: var(--font-mono); font-size: 0.8125rem; color: var(--ink-2); }
+.sheet-foot a { font-family: var(--font-mono); font-size: 0.8125rem; color: #40595c; }
 
 /* ---------------------------------------------------------------
    Actions
