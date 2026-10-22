@@ -28,14 +28,14 @@ export default function Page() {
     <>
       <header className="header" data-scrolled={scrolled}>
         <div className="shell header-inner">
-          <a href="#top" className="brand" aria-label="Swim Safe Uganda home"><span className="brand-dot" aria-hidden="true" /><span>Swim Safe <em>Uganda</em></span></a>
+          <a href="#top" className="brand" aria-label="Swim Safe Uganda home"><span className="brand-pdf-link"><img className="brand-mark" src="/swim-safe-logo.png" alt="Swim Safe Uganda logo" /></span><span>Swim Safe <em>Uganda</em></span></a>
           <nav className="nav" aria-label="Main navigation">{nav.map((item) => <a key={item.href} href={item.href}>{item.label}</a>)}</nav>
           <button className="menu-toggle" onClick={() => setMenuOpen(true)} aria-label="Open navigation"><Menu size={22} /></button>
         </div>
       </header>
 
       <div className="sheet" data-open={menuOpen} aria-hidden={!menuOpen} inert={!menuOpen || undefined}>
-        <div className="sheet-head"><span className="brand"><span className="brand-dot" aria-hidden="true" />Swim Safe <em>Uganda</em></span><button className="menu-toggle" onClick={() => setMenuOpen(false)} aria-label="Close navigation"><X size={22} /></button></div>
+        <div className="sheet-head"><span className="brand"><span className="brand-pdf-link"><img className="brand-mark" src="/swim-safe-logo.png" alt="Swim Safe Uganda logo" /></span>Swim Safe <em>Uganda</em></span><button className="menu-toggle" onClick={() => setMenuOpen(false)} aria-label="Close navigation"><X size={22} /></button></div>
         <nav className="sheet-links" aria-label="Mobile navigation">{nav.map((item) => <a key={item.href} href={item.href} onClick={() => setMenuOpen(false)}>{item.label}</a>)}</nav>
         <div className="sheet-foot"><a href={`mailto:${EMAIL}`}>{EMAIL}</a><a href="tel:+256752209938">+256 752 209 938</a></div>
       </div>
