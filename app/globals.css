@@ -260,6 +260,7 @@ h1, h2, h3, p, figure, blockquote { margin: 0; }
   object-fit: contain;
   display: block;
   border-radius: 50%;
+  clip-path: circle(39% at 50% 50%);
 }
 
 .brand-pdf-link {
